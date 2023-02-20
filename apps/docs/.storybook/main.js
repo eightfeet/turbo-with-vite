@@ -19,13 +19,6 @@ module.exports = {
               __dirname,
               "../../../packages/core/"
             ),
-          },
-          {
-            find: "@byhealth/web-components",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/web-components/"
-            ),
           }
         ],
       },

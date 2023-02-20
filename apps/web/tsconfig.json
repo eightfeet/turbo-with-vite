@@ -1,4 +1,0 @@
-{
-  "extends": "@byhealth/tsconfig/vite.json",
-  "include": ["src"]
-}

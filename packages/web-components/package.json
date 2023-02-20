@@ -1,16 +1,26 @@
 {
   "name": "@byhealth/web-components",
+  "private": true,
   "version": "0.0.0",
-  "main": "./index.ts",
-  "types": "./index.ts",
-  "license": "MIT",
+  "type": "module",
+  "main": "dist/my-element.es.js",
+  "exports": {
+    ".": "./dist/my-element.es.js"
+  },
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
-    "lint": "eslint \"**/*.ts\""
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "lit": "^2.6.1"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-byhealth": "workspace:*",
-    "@byhealth/tsconfig": "workspace:*",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
   }
 }
