@@ -1,0 +1,24 @@
+{
+  "name": "@byhealth/uiweb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode 22222",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@byhealth/theme": "workspace:*",
+    "@types/node": "^18.13.0",
+    "@byhealth/web-components": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-byhealth": "workspace:*",
+    "@byhealth/tsconfig": "workspace:*",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3"
+  }
+}
